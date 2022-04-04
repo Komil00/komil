@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}Ro'yxatdan o'tish{% endblock title %}
+
+{% block content %}
+    <h2>Ro'yxatdan o'ting</h2>
+    <form method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="button">Yuborish</button>
+    
+    </form>
+{% endblock content %}
